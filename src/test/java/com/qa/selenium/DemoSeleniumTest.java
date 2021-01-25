@@ -58,16 +58,6 @@ public class DemoSeleniumTest {
 		assertEquals("**Successful Login**", targ.getText());
 	}
 	
-	@Test
-	public void test_AutoSite() throws InterruptedException{
-		driver.get("http://www.automationpractice.com/index.php?id_category=5&controller=category");
-		Thread.sleep(1000);
-		WebElement targ = driver.findElement(By.className("left-block"));
-		targ.click();
-		
-		Thread.sleep(5000);
-	}
-	
 	
 	@AfterAll
 	public static void cleanUp() {
